@@ -1,0 +1,37 @@
+from src.String_Formatting.util import print_formatted
+
+
+def test_case_1():
+    expected = [
+        "1 1 1 1"
+    ]
+    assert [line.strip() for line in print_formatted(1)] == expected
+
+
+def test_case_2():
+    expected = [
+        "1 1 1 1",
+        "2 2 2 10"
+    ]
+    assert [line.strip() for line in print_formatted(2)] == expected
+
+
+def test_case_3():
+    expected = [
+        "1 1 1 1",
+        "2 2 2 10",
+        "3 3 3 11"
+    ]
+    assert [line.strip() for line in print_formatted(3)] == expected
+
+
+def test_case_4():
+    result = print_formatted(5)
+
+    assert result[-1].strip() == "5 5 5 101"
+
+
+def test_case_5():
+    result = print_formatted(17)
+
+    assert result[-1].strip() == "17 21 11 10001"
