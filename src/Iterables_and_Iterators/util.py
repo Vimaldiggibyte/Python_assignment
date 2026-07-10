@@ -10,4 +10,5 @@ def calculate_probability(letters: list[str], k: int) -> float:
         if "a" in combination:
             favorable += 1
 
+
     return favorable / len(all_combinations)
