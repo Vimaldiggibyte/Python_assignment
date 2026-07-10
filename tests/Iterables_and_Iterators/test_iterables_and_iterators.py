@@ -26,6 +26,6 @@ def test_case_4():
 
 
 def test_case_5():
-    letters = ["a", "b", "a", "c"]
+    letters = ["a", "b", "a", "c" ]
 
     assert round(calculate_probability(letters, 2), 4) == 0.8333
