@@ -29,5 +29,5 @@ def test_case_5():
     assert filter_emails(emails) == [
         "brian-23@hackerrank.com",
         "britts_54@hackerrank.com",
-        "lara@hackerrank.com"
+        "lara@hackerrank.com",
     ]
